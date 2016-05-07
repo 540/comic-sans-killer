@@ -33,12 +33,9 @@
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com; object-src 'self'",
   "content_scripts": [
     {
-      "matches": [
-        "https://mail.google.com/mail/*"
-      ],
-      "js": [
-        "js/script.js"
-      ]
+      "matches": ["http://*/*"],
+      "js": [ "js/script.js" ],
+      "css": [ "css/alerts.css" ]
     }
   ]
 }
